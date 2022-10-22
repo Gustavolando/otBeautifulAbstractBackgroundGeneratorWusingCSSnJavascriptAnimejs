@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautiful Abstract Background Generator using CSS & Javascript | Anime.js</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <button onclick="generate()">Generate</button>
+  </div>
+  <script src="./anime.min.js"></script>
+  <script>
+    const container = document.querySelector(".container")
+    for (let i = 1; i<=100; i++) {
+      const blocks = document.createElement('div')
+      blocks.classList.add('block')
+      container.appendChild(blocks)
+    }
+
+    function generate() {
+      anime({
+        targets: '.block',
+        translateX: () => {
+          return anime.random(-700, 700)
+        },
+        translateY: () => {
+          return anime.random(-700, 700)
+        },
+        scale: () => {
+          return anime.random(1, 5)
+        },
+      })
+    }
+  </script>
+</body>
+</html>
