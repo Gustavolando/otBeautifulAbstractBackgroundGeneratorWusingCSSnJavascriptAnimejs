@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #202020;
+  background: linear-gradient(45deg, #14103b, #f02a71);
   overflow: hidden;
 }
 
@@ -25,32 +25,71 @@ body {
   align-items: center;
 }
 
-button {
+.container img {
   position: relative;
+  width: 500px;
   z-index: 1;
   margin: 10px;
   border: none;
   outline: none;
-  background: #fff;
   font-size: 1.2em;
   padding: 15px 30px;
   cursor: pointer;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
-  /* display: none; */
+  animation: animateLogo 6s ease-in-out infinite;
+  /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25); */
 }
 
-.block {
+@keyframes animateLogo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+}
+}
+
+.cloud {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  top: 50px;
+  width: 32px;
+  height: 10px;
   background: #fff;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
 }
 
-.block:nth-child(3n + 2) {
-  background: #444;
+.cloud::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 4px;
+  width: 11px;
+  height: 11px;
+  background: inherit;
+  color: inherit;
+  border-radius: 50%;
+  /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25); */
 }
 
-.block:nth-child(3n + 3) {
-  background: #ff9213;
+.cloud::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 11px;
+  width: 17px;
+  height: 17px;
+  background: inherit;
+  color: inherit;
+  border-radius: 50%;
+  /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25); */
+}
+
+.cloud:nth-child(3n + 2) {
+  background: #a09ea3;
+}
+
+.cloud:nth-child(3n + 3) {
+  background: #105fae;
 }

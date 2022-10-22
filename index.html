@@ -9,20 +9,21 @@
 </head>
 <body>
   <div class="container">
-    <button onclick="generate()">Generate</button>
+    <!-- <button onclick="generate()">Generate</button> -->
+    <img src="./gbmlogo.png" alt="gbm logo" onclick="generate()">
   </div>
   <script src="./anime.min.js"></script>
   <script>
     const container = document.querySelector(".container")
     for (let i = 1; i<=100; i++) {
-      const blocks = document.createElement('div')
-      blocks.classList.add('block')
-      container.appendChild(blocks)
+      const clouds = document.createElement('div')
+      clouds.classList.add('cloud')
+      container.appendChild(clouds)
     }
 
     function generate() {
       anime({
-        targets: '.block',
+        targets: '.cloud',
         translateX: () => {
           return anime.random(-700, 700)
         },
