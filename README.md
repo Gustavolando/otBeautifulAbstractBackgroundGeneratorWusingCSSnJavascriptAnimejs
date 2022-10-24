@@ -20,6 +20,6 @@ This was taken from the Online Tutorials [videos](https://www.youtube.com/watch?
 
 I hope you like it, code it and [watch it](https://gustavolando.github.io/otBeautifulAbstractBackgroundGeneratorWusingCSSnJavascriptAnimejs/)!
 
-![Beautiful Abstract Background Generator using CSS & Javascript | Anime.js](https://gustavolando.github.io/otBeautifulAbstractBackgroundGeneratorWusingCSSnJavascriptAnimejs/BAbstract%20background%20with%20clouds%20and%20GBM%20logo.png)
+![Beautiful Abstract Background Generator using CSS & Javascript | Anime.js](https://gustavolando.github.io/otBeautifulAbstractBackgroundGeneratorWusingCSSnJavascriptAnimejs/Abstract%20background%20with%20clouds%20and%20GBM%20logo.png)
 
 Here is the animation demo link:  https://gustavolando.github.io/otBeautifulAbstractBackgroundGeneratorWusingCSSnJavascriptAnimejs/
